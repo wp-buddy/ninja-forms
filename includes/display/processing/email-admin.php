@@ -55,7 +55,7 @@ function ninja_forms_email_admin(){
 	}
 
 	$headers = "\nMIME-Version: 1.0\n";
-	$headers .= "From: $email_from \r\n";
+	$headers .= "From: $email_from <$email_from> \r\n";
 	$headers .= "Content-Type: text/".$email_type."; charset=utf-8\r\n";
 
 	if($ninja_forms_processing->get_form_setting('admin_attachments')){
